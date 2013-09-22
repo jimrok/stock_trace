@@ -1,6 +1,12 @@
 class StockDayData < ActiveRecord::Base
 
 
+  def ema(shift)
+    
+
+  end
+
+
   def self.fetch_data(stock_code,start_year=nil,end_year=nil,start_month=nil,end_month=nil,start_day=nil,end_day=nil)
 
     url = ' http://ichart.finance.yahoo.com/table.csv'
